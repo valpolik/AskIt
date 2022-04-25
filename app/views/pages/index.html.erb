@@ -1,3 +1,6 @@
-<h1>Welcome to AskIt</h1>
+<% provide :page_title, 'Welcome to AskIt' %>
+<% currently_at 'Home' %>
+
+<h1><%= yield(:page_title) %></h1>
 
 &copy; @valpolik <%= Time.now.year %>
